@@ -18,7 +18,7 @@
 <main>
 <nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
 <h1>Privacy Policy</h1>
-<p class="muted">supercharged_cat · Last updated 19 October 2026</p>
+<p class="muted">supercharged_cat · Last updated 21 October 2026</p>
 
 <p>supercharged_cat is a private command-line tool, operated by the owner of the YouTube channel CAT Prep Supercharged, that uploads the channel's educational videos to it, organises them into playlists, and reads how long viewers watch those videos. It runs only on the operator's own computer and is used only by the operator, with the operator's own Google account. This policy explains what the tool accesses through Google and YouTube, and what it does with it.</p>
 
@@ -31,9 +31,12 @@
   <li>read the signed-in channel's ID and name, to confirm it is posting to the right channel;</li>
   <li>upload the operator's own videos with their title, description, tags, category, visibility and content disclosures;</li>
   <li>read back the status of videos it has just uploaded;</li>
-  <li>list the channel's playlists, create a playlist when one is missing, and add uploaded videos to it.</li>
+  <li>list the channel's playlists, create a playlist when one is missing, and add uploaded videos to it;</li>
+  <li>set a custom thumbnail image on videos it has uploaded;</li>
+  <li>update the description of videos it has uploaded, to add links between the channel's related videos.</li>
 </ul>
 <p>It also asks for <code>https://www.googleapis.com/auth/yt-analytics.readonly</code> (view YouTube Analytics reports for your content). It uses that permission only to read, for the channel's own uploaded videos: the audience-retention curve; totals of views, watch time, average view duration and percentage, likes, comments, shares, and subscribers gained and lost; the same numbers per day; and the share of views from each traffic source (such as the Shorts feed or search). These are aggregate numbers from YouTube Analytics; no individual viewer is identified.</p>
+<p>It also asks for <code>https://www.googleapis.com/auth/youtube.force-ssl</code> (see, edit and permanently delete your YouTube videos, ratings, comments and captions), because it is the permission YouTube requires for uploading captions. It uses that permission only to upload a closed-caption track to videos it has uploaded, made from the video's own narration, and to list the caption tracks on those videos so a track is not added twice. It does not use it to read, edit or delete ratings, comments, or any other content.</p>
 <p>It does not read, collect or change anything else in the account, such as comments, subscribers, watch history, messages or other people's data.</p>
 
 <h2>What is stored, and where</h2>
